@@ -17,6 +17,8 @@
 \renewbibmacro*{cite:labelyear+extrayear}{%
   \iffieldundef{labelyear}
     {}
-    {\addcomma\addspace\printtext[bibhyperref]{%
+    {\printtext[bibhyperref]{%
        \printfield{labelyear}%
        \printfield{extrayear}}}}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
